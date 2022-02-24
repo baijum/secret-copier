@@ -1,6 +1,16 @@
-domain: apps.muthukadan.net
+domain: muthukadan.net
 layout:
 - go.kubebuilder.io/v3
 projectName: secret-copier
 repo: github.com/baijum/secret-copier
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: muthukadan.net
+  group: apps
+  kind: SecretCopier
+  path: github.com/baijum/secret-copier/api/v1alpha1
+  version: v1alpha1
 version: "3"
