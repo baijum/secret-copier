@@ -28,8 +28,11 @@ type SecretCopierSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of SecretCopier. Edit secretcopier_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// Name of the secret resource
+	Name string `json:"name"`
+
+	// Namespace of the secret resource
+	Namespace string `json:"namespace"`
 }
 
 // SecretCopierStatus defines the observed state of SecretCopier
