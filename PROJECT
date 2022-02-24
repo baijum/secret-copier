@@ -1,0 +1,6 @@
+domain: apps.muthukadan.net
+layout:
+- go.kubebuilder.io/v3
+projectName: secret-copier
+repo: github.com/baijum/secret-copier
+version: "3"
